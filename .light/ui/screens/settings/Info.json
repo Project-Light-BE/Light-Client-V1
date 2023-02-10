@@ -1,0 +1,186 @@
+{
+    "namespace": "info",
+    "info_button@settings_common.section_toggle_base": {
+        "$toggle_view_binding_name": "info_button_toggle",
+        "$glyph_texture": "textures/uidx/glyphs/logo1",
+        "$glyph_color_texture": "textures/uidx/glyphs/logo",
+        "$glyph_size": [
+            17,
+            17
+        ],
+        "$button_text": "client.name",
+        "$toggle_property_bag": {
+            "#panel_title": "client.name"
+        }
+    },
+    "info": {
+        "type": "stack_panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "info_button_toggle",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "creatorinfo@turtle_assets.header": {
+                    "$text": "Creator Info "
+                }
+            },
+            {
+                "madeby@turtle_assets.info_label": {
+                    "text": "Made By : Pepe"
+                }
+            },
+            {
+                "youtube@turtle_assets.info_label": {
+                    "text": "§cYouTube :§rPepe"
+                }
+            },
+            {
+                "twitter@turtle_assets.info_label": {
+                    "text": "§1Twitter§f : §@asteroid_client"
+                }
+            },
+            {
+                "discord@turtle_assets.info_label": {
+                    "text": "§9Discord§f : Chixuty§r§7#0654"
+                }
+            },
+            {
+                "link@turtle_assets.info_label": {
+                    "text": "§9Discord Link §r: §bhttps://discord.gg/4dvPPNnanb"
+                }
+            },
+            {
+                "spacer": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        15
+                    ]
+                }
+            },
+            {
+                "warning@turtle_assets.info_label": {
+                    "size": [
+                        "100%",
+                        40
+                    ],
+                    "text": "There Is A Famous Client Thats Says That They Were The First Ones To Implement Mod Toggles To A TexturePack Client , That IS FALSE , I Made The First Mod Toggles In§6 July Of 2021 "
+                }
+            },
+            {
+                "spacer2": {
+                    "type": "panel",
+                    "size": [
+                        0,
+                        10
+                    ]
+                }
+            },
+            {
+                "notfosbooster@turtle_assets.info_label": {
+                    "text": "This Is §cNOT§r A FPS §aBooster"
+                }
+            },
+            {
+                "spacer3": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        15
+                    ]
+                }
+            },
+            {
+                "credits@turtle_assets.header": {
+                    "$text": "§eOther Developers"
+                }
+            },
+            {
+                "spacer4": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        10
+                    ]
+                }
+            },
+            {
+                "wingscredit@turtle_assets.info_label": {
+                    "text": "§bKyra"
+                }
+            },
+            {
+                "wingscreditperson@turtle_assets.info_label": {
+                    "text": ""
+                }
+            },
+            {
+                "spacer5": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        10
+                    ]
+                }
+            },
+            {
+                "potionicons@turtle_assets.info_label": {
+                    "text": "§bBlueman"
+                }
+            },
+            {
+                "potioniconsperson@turtle_assets.info_label": {
+                    "text": ""
+                }
+            },
+            {
+                "spacer6": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        10
+                    ]
+                }
+            },
+            {
+                "potionicons@turtle_assets.info_label": {
+                    "text": "§aFlexyus"
+                }
+            },
+            {
+                "potioniconsperson@turtle_assets.info_label": {
+                    "text": ""
+                }
+            },
+            {
+                "features@turtle_assets.info_label": {
+                    "font_size": "large",
+                    "shadow": true,
+                    "text": "Features"
+                }
+            },
+            {
+                "version1@turtle_assets.header": {
+                    "$text": "§3Light §6Client V1"
+                }
+            },
+            {
+                "features": {
+                    "type": "label",
+                    "text": "§e -Mod Menu\n -Armorhud\n -Better UI \n -DirectionHud\n -Quick Craft and Trade"
+                }
+            }
+        ]
+    }
+}

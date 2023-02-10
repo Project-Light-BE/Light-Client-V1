@@ -1,0 +1,65 @@
+{
+    "namespace": "light_image_buttons",
+    "button_imaging": {
+        "type": "image",
+        "layer": 2,
+        "size": [
+            "70%",
+            "70%"
+        ],
+        "texture": "$button_icon"
+    },
+    "button_image2": {
+        "type": "image",
+        "$custom_content|default": "",
+        "$default|default": false,
+        "$hover|default": false,
+        "$pressed|default": false,
+        "$locked|default": false,
+        "$button_bindings|default": [],
+        "controls": [
+            {
+                "custom_content@$custom_content": {}
+            },
+            {
+                "button_content@light_image_buttons.button_imaging": {
+                    "visible": "($custom_content = '')"
+                }
+            }
+        ]
+    },
+    "light_image_button@common.button": {
+        "size": [
+            20,
+            20
+        ],
+        "controls": [
+            {
+                "default@light_image_buttons.button_default2": {}
+            },
+            {
+                "hover@light_image_buttons.button_hover2": {}
+            },
+            {
+                "pressed@light_image_buttons.button_pressed2": {}
+            }
+        ]
+    },
+    "button_default2@light_image_buttons.button_image2": {
+        "$default": true,
+        "alpha": "$default_alpha",
+        "$default_alpha|default": 1,
+        "texture": ".light/textures/buttons/default"
+    },
+    "button_hover2@light_image_buttons.button_image2": {
+        "$hover": true,
+        "texture": "$hover_button_texture",
+        "$hover_button_texture|default": ".light/textures/buttons/hover",
+        "propagate_alpha": true
+    },
+    "button_pressed2@light_image_buttons.button_hover2": {
+        "texture": "$pressed_button_texture",
+        "$pressed_button_texture|default": ".light/textures/buttons/hover",
+        "$pressed": true
+    }
+}

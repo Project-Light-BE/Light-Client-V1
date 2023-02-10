@@ -1,0 +1,33 @@
+{
+    "namespace": "light_dura_temp",
+    "durability_text_template": {
+        "type": "label",
+        "text": "('§a' + $durability_percentage_text)",
+        "$durability_percentage|default": "",
+        "offset": "$text_offset",
+        "$text_offset|default": [
+            0,
+            -16
+        ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "shadow": true,
+        "bindings": [
+            {
+                "binding_name": "#item_durability_current_amount",
+                "binding_type": "collection",
+                "binding_collection_name": "hotbar_items"
+            },
+            {
+                "binding_name": "#item_durability_total_amount",
+                "binding_type": "collection",
+                "binding_collection_name": "hotbar_items"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "((#item_durability_current_amount / #item_durability_total_amount * 100 < $durability_percentage and #item_durability_current_amount / #item_durability_total_amount * 100 > ($durability_percentage - 1)) or (#item_durability_current_amount / #item_durability_total_amount * 100 = $durability_percentage))",
+                "target_property_name": "#visible"
+            }
+        ]
+    }
+}

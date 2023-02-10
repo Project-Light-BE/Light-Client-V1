@@ -1,0 +1,209 @@
+{
+    "namespace": "pause",
+    "content": {
+        "type": "panel",
+        "controls": [
+            {
+                "Hide_pause@common_toggles.mod_menu_button": {
+                    "$button_text": "Mods",
+                    "$toggle_view_binding_name": "mod_menu",
+                    "anchor_from": "bottom_left",
+                    "anchor_to": "bottom_left",
+                    "size": [
+                        32,
+                        18
+                    ]
+                }
+            },
+            {
+                "@main_menu": {}
+            }
+        ]
+    },
+    "main_menu": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "layer": -1,
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "mod_menu",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "content": {
+                    "type": "panel",
+                    "size": [
+                        260,
+                        165
+                    ],
+                    "controls": [
+                        {
+                            "@main_menu_bg": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "main_menu_bg": {
+        "type": "panel",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "(not mod_menu)",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "achievements_button@light_image_buttons.light_image_button": {
+                    "size": [
+                        18,
+                        17
+                    ],
+                    "offset": [
+                        57,
+                        0
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$pressed_button_name": "button.menu_achievements",
+                    "$button_icon": ".light/textures/screens/common/achievement"
+                }
+            },
+            {
+                "take_screenshot_button@light_image_buttons.light_image_button": {
+                    "$pressed_button_name": "button.screenshot",
+                    "$button_tts_header": "key.screenshot",
+                    "size": [
+                        18,
+                        17
+                    ],
+                    "offset": [
+                        38,
+                        0
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$button_icon": "textures/ui/camera-yo",
+                    "$pressed_alpha": 0.65,
+                    "sound_name": "random.screenshot",
+                    "sound_volume": 1.0,
+                    "sound_pitch": 1.0
+                }
+            },
+            {
+                "profile_button@light_image_buttons.light_image_button": {
+                    "size": [
+                        18,
+                        17
+                    ],
+                    "offset": [
+                        19,
+                        0
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$pressed_button_name": "button.to_profile_screen",
+                    "$button_icon": ".light/textures/screens/common/profile"
+                }
+            },
+            {
+                "store_button@light_image_buttons.light_image_button": {
+                    "size": [
+                        18,
+                        17
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$pressed_button_name": "button.menu_play",
+                    "$button_icon": ".light/textures/screens/common/store"
+                }
+            },
+            {
+                "bg1": {
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "alpha": 0.35,
+                    "layer": -1,
+                    "size": [
+                        "100%",
+                        "100%"
+                    ]
+                }
+            },
+            {
+                "bg2": {
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "alpha": 0.65,
+                    "layer": -1,
+                    "offset": [
+                        0,
+                        7
+                    ],
+                    "size": [
+                        "97%",
+                        "87%"
+                    ]
+                }
+            },
+            {
+                "save@light_buttons.light_button2": {
+                    "size": [
+                        96,
+                        25
+                    ],
+                    "offset": [
+                        0,
+                        102
+                    ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$pressed_button_name": "button.menu_quit",
+                    "$button_text": "Save And Quit"
+                }
+            },
+            {
+                "settings_button@light_buttons.light_button2": {
+                    "size": [
+                        96,
+                        25
+                    ],
+                    "offset": [
+                        0,
+                        76
+                    ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$pressed_button_name": "button.menu_settings",
+                    "$button_text": "Settings"
+                }
+            },
+            {
+                "play_button@light_buttons.light_button2": {
+                    "size": [
+                        96,
+                        25
+                    ],
+                    "offset": [
+                        0,
+                        51
+                    ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$pressed_button_name": "button.menu_continue",
+                    "$button_text": "Resume"
+                }
+            }
+        ]
+    }
+}

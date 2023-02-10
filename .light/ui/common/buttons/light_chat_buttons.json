@@ -1,0 +1,12 @@
+{
+    "namespace": "light_chat_buttons",
+    "light_chat_button@common_buttons.light_text_button": {
+        "size": [
+            27,
+            27
+        ],
+        "$pressed_button_name": "button.send",
+        "anchor_from": "bottom_right",
+        "anchor_to": "bottom_right"
+    }
+}

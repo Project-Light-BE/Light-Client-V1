@@ -1,0 +1,194 @@
+{
+  "namespace": "light_start",
+  "main_menu": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "layer": 1,
+    "controls": [
+      {
+        "content": {
+          "type": "panel",
+          "size": [
+            260,
+            165
+          ],
+          "controls": [
+            {
+              "exit_button@light_image_buttons.light_image_button": {
+                "size": [
+                  18,
+                  17
+                ],
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "$pressed_button_name": "button.menu_exit",
+                "$button_icon": ".light/textures/screens/common/exit"
+              }
+            },
+            {
+              "profile_button@light_image_buttons.light_image_button": {
+                "size": [
+                  18,
+                  17
+                ],
+                "offset": [
+                  19,
+                  0
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$pressed_button_name": "button.to_profile_screen",
+                "$button_icon": ".light/textures/screens/common/profile"
+              }
+            },
+            {
+              "settings_button@light_image_buttons.light_image_button": {
+                "size": [
+                  18,
+                  17
+                ],
+                "offset": [
+                  38,
+                  0
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$pressed_button_name": "button.menu_settings",
+                "$button_icon": ".light/textures/screens/common/settings"
+              }
+            },
+            {
+              "achievements_button@light_image_buttons.light_image_button": {
+                "size": [
+                  18,
+                  17
+                ],
+                "offset": [
+                  57,
+                  0
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$pressed_button_name": "button.menu_achievements",
+                "$button_icon": ".light/textures/screens/common/achievement"
+              }
+            },
+            {
+              "store_button@light_image_buttons.light_image_button": {
+                "size": [
+                  18,
+                  17
+                ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$pressed_button_name": "button.menu_store",
+                "$button_icon": ".light/textures/screens/common/store"
+              }
+            },
+            {
+              "bg1": {
+                "type": "image",
+                "texture": "textures/ui/hud_tip_text_background",
+                "alpha": 0.35,
+                "layer": 1,
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "bg2": {
+                "type": "image",
+                "texture": "textures/ui/hud_tip_text_background",
+                "alpha": 0.65,
+                "layer": 1,
+                "offset": [
+                  0,
+                  7
+                ],
+                "size": [
+                  "97%",
+                  "87%"
+                ]
+              }
+            },
+            {
+              "paper_doll": {
+                "type": "custom",
+                "renderer": "paper_doll_renderer",
+                "layer": 2,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "size": [
+                  72,
+                  96
+                ],
+                "offset": [
+                  0,
+                  -37
+                ]
+              }
+            },
+            {
+              "play_button@light_buttons.light_button2": {
+                "size": [
+                  96,
+                  25
+                ],
+                "offset": [
+                  0,
+                  -25
+                ],
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "$pressed_button_name": "button.menu_play",
+                "$button_text": "Play Game"
+              }
+            },
+            {
+              "version": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "layer": 2,
+                "text": "#version",
+                "size": [
+                  "default",
+                  10
+                ],
+                "offset": [
+                  0,
+                  -5
+                ],
+                "max_size": [
+                  "100%",
+                  "100%"
+                ],
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "bindings": [
+                  {
+                    "binding_name": "#version"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "light_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "@main_menu": {
+
+        }
+      }
+    ]
+  }
+}

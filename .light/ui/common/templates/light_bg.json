@@ -1,0 +1,19 @@
+{
+    "namespace": "light_textures",
+    "bg": {
+        "type": "image",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer": 0,
+        "fill": true,
+        "offset": [
+            0,
+            0
+        ],
+        "texture": ".light/textures/bg/startbg",
+        "size": [
+            "100%",
+            "100%"
+        ]
+    }
+}

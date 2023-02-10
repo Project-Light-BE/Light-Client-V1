@@ -1,0 +1,12 @@
+{
+    "namespace": "light_common_bg",
+    "light_bg": {
+        "type": "image",
+        "size": [
+            "130%",
+            "130%"
+        ],
+        "texture": ".light/textures/bg/common_bg",
+        "layer": -100
+    }
+}

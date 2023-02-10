@@ -1,0 +1,45 @@
+{
+    "namespace": "light_info",
+    "light_info_panel": {
+        "type": "panel",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "info_tab",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "offset": [
+            0,
+            10
+        ],
+        "controls": [
+            {
+                "info_text": {
+                    "type": "label",
+                    "text": "§fProject§e Light",
+                    "font_type": "MinecraftTen",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "offset": [
+                        0,
+                        "10%"
+                    ]
+                }
+            },
+            {
+                "info_text2": {
+                    "type": "label",
+                    "text": "It's a Texture pack client that improves\nMinecraft with countless features.\nThis §cisn't§f meant to boost Fps.\nTo save the mods edit the §econfig.json§f in the\nclient files.",
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [
+                        10,
+                        0
+                    ]
+                }
+            }
+        ]
+    }
+}
