@@ -1,0 +1,96 @@
+{
+    "namespace": "chat",
+    "chat_screen@common.base_screen": {
+        "$screen_bg_content": "chat.chat_background",
+        "$screen_content": "chat.chat_screen_content",
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_exit",
+                "mapping_type": "global",
+                "to_button_id": "button.chat_menu_cancel"
+            },
+            {
+                "from_button_id": "button.menu_cancel",
+                "mapping_type": "global",
+                "to_button_id": "button.chat_menu_cancel"
+            }
+        ],
+        "close_on_player_hurt": false
+    },
+    "cmdp@light_chat_buttons.light_chat_button": {
+        "$pressed_button_name": "button.chat_autocomplete_back",
+        "$button_text": "<<"
+    },
+    "cmdn@light_chat_buttons.light_chat_button": {
+        "$pressed_button_name": "button.chat_autocomplete",
+        "$button_text": ">>"
+    },
+    "msgp@light_chat_buttons.light_chat_button": {
+        "$pressed_button_name": "button.chat_previous_message",
+        "$button_text": "<"
+    },
+    "msgn@light_chat_buttons.light_chat_button": {
+        "$pressed_button_name": "button.chat_next_message",
+        "$button_text": ">"
+    },
+    "chat_bottom_panel": {
+        "type": "stack_panel",
+        "orientation": "horizontal",
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "size": [
+            "100%",
+            27
+        ],
+        "min_size": [
+            "100%",
+            27
+        ],
+        "controls": [
+            {
+                "keyboard_button@chat.keyboard_button": {}
+            },
+            {
+                "host_main_button@host_options.host_main_button": {
+                    "ignored": "$is_pregame"
+                }
+            },
+            {
+                "chat_settings@chat.chat_settings_button": {}
+            },
+            {
+                "msgp@chat.msgp": {}
+            },
+            {
+                "msgn@chat.msgn": {}
+            },
+            {
+                "text_box@chat.text_edit_box": {}
+            },
+            {
+                "send_button@chat.send_button": {
+                    "offset": [
+                        -20,
+                        0
+                    ]
+                }
+            },
+            {
+                "cmdp@chat.cmdp": {
+                    "offset": [
+                        -20,
+                        0
+                    ]
+                }
+            },
+            {
+                "cmdn@chat.cmdn": {
+                    "offset": [
+                        -20,
+                        0
+                    ]
+                }
+            }
+        ]
+    }
+}

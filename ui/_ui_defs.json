@@ -1,0 +1,29 @@
+{
+    "ui_defs": [
+        //Common
+        ".light/ui/common/animations/light_popup_animation.json",
+        ".light/ui/common/buttons/light_buttons.json",
+        ".light/ui/common/buttons/light_image_buttons.json",
+        ".light/ui/common/buttons/light_chat_buttons.json",
+        ".light/ui/common/buttons/light_checkmarks.json",        
+        ".light/ui/common/templates/light_slider.json",
+        ".light/ui/common/templates/light_header.json",
+        ".light/ui/common/templates/light_dura_temp.json",
+        ".light/ui/common/templates/light_bg.json",
+        ".light/ui/common/light_common_bg.json",
+        
+        //Mod Menu
+        ".light/ui/mod_menu/mod_menu.json",
+        ".light/ui/mod_menu/mods_panel.json",
+        ".light/ui/mod_menu/mainhand.json",
+        ".light/ui/mod_menu/info_panel.json",
+        ".light/ui/mod_menu/cross_panel.json",
+        "config.txt",
+             
+        //Screens
+        ".light/ui/screens/pause/light_pause.json",  
+        ".light/ui/screens/profile/light_profile.json",
+        ".light/ui/screens/start/light_start.json",
+        ".light/ui/screens/command_block/light_command_block.json"
+    ]
+}

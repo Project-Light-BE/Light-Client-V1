@@ -1,0 +1,165 @@
+{
+    "namespace": "hud_screen",
+    "boss_name_panel": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "boss_bar_text",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "boss_health_panel/progress_bar_for_collections": {
+        "bindings": [
+            {
+                "binding_name": "#progress_percentage",
+                "binding_name_override": "#clip_ratio",
+                "binding_type": "collection",
+                "binding_collection_name": "$progress_bar_collection"
+            },
+            {
+                "binding_name": "#bar_color",
+                "binding_name_override": "#color",
+                "binding_type": "collection",
+                "binding_collection_name": "$progress_bar_collection"
+            },
+            {
+                "binding_type": "view",
+                "source_control_name": "boss_bar_health",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "vignette_renderer": {
+        "layer": -10,
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "vig_nette",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "hud_tip_text": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "hud_tip",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "hud_actionbar_text": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "action_bar",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "hud_title_text/title_frame": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "hud_title",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "hud_title_text/subtitle_frame": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "sub_title",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "mob_effects_renderer": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "effect_icons",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ],
+        "layer": 1,
+        "renderer": "mob_effects_renderer",
+        "orientation": "vertical",
+        "type": "custom"
+    },
+    "item_name_text@hud.item_name_text_root": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "item_text_enabled",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ],
+        "offset": [
+            0,
+            -14
+        ]
+    },
+    "hud_screen": {
+        "always_accepts_input": true,
+        "render_only_when_topmost": false,
+        "$use_loading_bars": false,
+        "$screen_animations": []
+    },
+    "hud_content": {
+        "$hud_player_rend_desktop_offset|default": [
+            -15,
+            15
+        ],
+        "variables": [
+            {
+                "requires": "($is_holographic and not $is_living_room_mode)",
+                "$hud_player_rend_desktop_offset": [
+                    -100,
+                    50
+                ]
+            },
+            {
+                "requires": "($compress_hud_width)",
+                "$hud_size": [
+                    "90%",
+                    "100%"
+                ]
+            }
+        ],
+        "size": "$hud_size",
+        "controls": [
+            {
+                "root_panel@hud.root_panel": {}
+            },
+            {
+                "camera_renderer@camera_renderer": {}
+            },
+            {
+                "light_mods@light_mods.mod_panel": {}
+            },
+            {
+                "light_mod_menu@light_mod_menu.light_mod_menu": {}
+            },
+            {
+                "popup_panel@light_popup_animation.popup_panel": {}
+            }
+        ]
+    },
+    "player_position": {
+        "controls": [
+            {}
+        ]
+    }
+}
